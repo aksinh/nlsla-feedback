@@ -6,45 +6,62 @@ $(document).ready(function() {
     //TODO: make sure mobile version is accessibile- especially for iPad/ mobile Safari!!!!!!!!
 
     //General TODO: is there a better way to select all text elements rather than listing them all?
-    //TEST
-  //FONT SIZES
- $('.increaseFSize').click(function() {
-   //Test code to see if it works...
-   //Implement dictionary that allows access to correpsonding things that was returned
-   var pfontSize = $("p").css("fontSize");
-   var h1fontSize = $("h1").css("fontSize");
-   var h2fontSize = $("h2").css("fontSize");
-   pfontSize += 5;
-   h1fontSize += 5;
-   h2fontSize += 5;
-   $('p').css('font-size', fontSize);
-   $('h1').css('font-size', fontSize);
-   $('h2').css('font-size', fontSize);
- });
- $('.decreaseFSize').click(function() {
-   var pfontSize = $("p").css("fontSize");
-   var h1fontSize = $("h1").css("fontSize");
-   var h2fontSize = $("h2").css("fontSize");
-   pfontSize -= 5;
-   h1fontSize -= 5;
-   h2fontSize -= 5;
-   $('p').css('font-size', fontSize);
-   $('h1').css('font-size', fontSize);
-   $('h2').css('font-size', fontSize);
- });
 
- $('.increaseContrast').click(function() {
-  $('body').css('background-color', blue);
-  $('p').css('background-color', yellow);
- });
+//**Change contrast of background**//
+//TODO: is there a better way than looping through all id's?
+function changeFontSize(id, isIncreased){
+  var el = document.getElementById(id);
+  var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+  var fontSize = parseFloat(style);
+  el.style.fontSize = (fontSize + (isIncreased ? 1 : -1)) + 'px';
+}
+
+$('.increaseFSize').click(function() {
+  changeFontSize('foo', true);
+  changeFontSize('p2', true);
+  changeFontSize('p1', true);
+  changeFontSize('header2', true);
+});
+$('.decreaseFSize').click(function() {
+   changeFontSize('foo', false);
+   changeFontSize('p2', false);
+   changeFontSize('p1', false);
+   changeFontSize('header2', false);
+});
 
 
+//**Change contrast of background**//
+function changeContrast(backgroundColor, textColor){
+  $('body').css('background-color', backgroundColor);
+  $('p').css('color', textColor);
+  $('h1').css('color', textColor);
+  $('h2').css('color', textColor);
+}
+
+ $('.blackBack_WhiteText').click(function() {
+   changeContrast('black', 'white');
+
+ });
+
+ $('.whiteBack_BlackText').click(function() {
+   changeContrast('white', 'black');
+ });
+
+ $('.sepiaBack_BrownText').click(function() {
+   changeContrast('#F4ECD8', '#685444');
+ });
+
+
+
+//**Change font-style**//
  $('.sansseriffButton').click(function() {
-  $('h1').css('font-family', 'sans-serif');
-  $('p').css('font-family', 'sans-serif');
+   $('h1').css('font-family', 'sans-serif');
+   $('h2').css('font-family', 'sans-serif');
+   $('p').css('font-family', 'sans-serif');
  });
  $('.seriffButton').click(function() {
    $('h1').css('font-family', 'serif');
+   $('h2').css('font-family', 'serif');
    $('p').css('font-family', 'serif');
  });
 
