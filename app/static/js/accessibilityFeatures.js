@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     //General TODO: is there a better way to select all text elements rather than listing them all?
 
-//**Change contrast of background**//
+//**Change font size**//
 //TODO: is there a better way than looping through all id's?
 function changeFontSize(id, isIncreased){
   var el = document.getElementById(id);
