@@ -44,14 +44,12 @@ function changeContrast(backgroundColor, textColor){
  });
 
  $('.whiteBack_BlackText').click(function() {
-   changeContrast('white', 'black');
+   changeContrast('white', '#383838');
  });
 
  $('.sepiaBack_BrownText').click(function() {
    changeContrast('#F4ECD8', '#685444');
  });
-
-
 
 //**Change font-style**//
  $('.sansseriffButton').click(function() {
@@ -65,7 +63,26 @@ function changeContrast(backgroundColor, textColor){
    $('p').css('font-family', 'serif');
  });
 
-//TODO: Add padding increase function
+//**Change line-heights**//
+function changeLineHeight(id, isIncreased){
+  var el = document.getElementById(id);
+  var style = window.getComputedStyle(el, null).getPropertyValue('line-height');
+  var fontSize = parseFloat(style);
+  el.style.lineHeight = (fontSize + (isIncreased ? 1 : -1)) + 'px';
+}
+$('.lineHeightUp').click(function() {
+  changeLineHeight('foo', true);
+  changeLineHeight('p2', true);
+  changeLineHeight('p1', true);
+  changeLineHeight('header2', true);
+});
+
+$('.lineHeightDown').click(function() {
+  changeLineHeight('foo', false);
+  changeLineHeight('p2', false);
+  changeLineHeight('p1', false);
+  changeLineHeight('header2', false);
+});
 
 
 
