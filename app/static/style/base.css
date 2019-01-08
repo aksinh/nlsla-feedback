@@ -24,6 +24,7 @@
 
 .question {
   font-size: 28px;
+  padding-bottom: 20px;
 }
 
 .a-select-image {
@@ -68,4 +69,9 @@ button {
 
 .overlay-element {
   z-index: 999999;
+}
+
+.a-select-text {
+    padding-top: 10px;
+    font-size: 20px;
 }
