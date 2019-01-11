@@ -5,30 +5,27 @@ $(document).ready(function() {
     //TODO: test rendering of website in all browsers (including all versions of IE 10 &+)
     //TODO: make sure mobile version is accessibile- especially for iPad/ mobile Safari!!!!!!!!
 
-    //General TODO: is there a better way to select all text elements rather than listing them all?
-
 //**Change font size**//
-//TODO: is there a better way than looping through all id's?
-function changeFontSize(id, isIncreased){
-  var el = document.getElementById(id);
-  var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
-  var fontSize = parseFloat(style);
-  el.style.fontSize = (fontSize + (isIncreased ? 1 : -1)) + 'px';
+
+var fontLevel = 0;
+
+$('.increaseFontSize').click(function() {
+  if (fontLevel >= 0 && fontLevel < 7){
+    fontLevel += 1;
+    updateFontSizes();
+  }
+});
+
+$('.decreaseFontSize').click(function() {
+  if (fontLevel > 0 && fontLevel <= 7){
+    fontLevel -= 1;
+    updateFontSizes();
+  }
+});
+
+function updateFontSizes(){
+  $('.question').css('font-size', parseFloat(fontLevel) + 28 + 'px');
 }
-
-$('.increaseFSize').click(function() {
-  changeFontSize('foo', true);
-  changeFontSize('p2', true);
-  changeFontSize('p1', true);
-  changeFontSize('header2', true);
-});
-$('.decreaseFSize').click(function() {
-   changeFontSize('foo', false);
-   changeFontSize('p2', false);
-   changeFontSize('p1', false);
-   changeFontSize('header2', false);
-});
-
 
 //**Change contrast of background**//
 function changeContrast(backgroundColor, textColor){
@@ -40,7 +37,6 @@ function changeContrast(backgroundColor, textColor){
 
  $('.blackBack_WhiteText').click(function() {
    changeContrast('black', 'white');
-
  });
 
  $('.whiteBack_BlackText').click(function() {
