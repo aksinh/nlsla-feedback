@@ -37,11 +37,11 @@ img {
   width: auto;
 }
 
-.next-btn {
+.go-right-btn {
     right: 7%;
 }
 
-.back-btn {
+.go-left-btn {
     left: 7%;
 }
 
@@ -55,7 +55,7 @@ img {
   height: 100%;
 }
 
-.pt-trigger {
+.page-btn {
   position: absolute;
   bottom: 5%;
   padding: 10px;
