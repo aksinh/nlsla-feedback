@@ -6,9 +6,7 @@ $(document).ready(function() {
     //TODO: make sure mobile version is accessibile- especially for iPad/ mobile Safari!!!!!!!!
 
 //**Change font size**//
-
 var fontLevel = 0;
-
 $('.increaseFontSize').click(function() {
   if (fontLevel >= 0 && fontLevel < 7){
     fontLevel += 1;
@@ -25,7 +23,9 @@ $('.decreaseFontSize').click(function() {
 
 function updateFontSizes(){
   $('.question').css('font-size', parseFloat(fontLevel) + 28 + 'px');
+  // $('.subtitle').css('font-size', parseFloat(fontLevel) + 28 + 'px');
 }
+
 
 //**Change contrast of background**//
 function changeContrast(backgroundColor, textColor){
