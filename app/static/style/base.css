@@ -12,7 +12,6 @@
 
 .right {
   right: 0;
-  border-left:solid 2px gray;
 }
 
 .centered {
@@ -24,6 +23,8 @@
 
 .question {
   font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  color: #030F3D;
 }
 
 .a-select-image {
@@ -68,4 +69,17 @@ button {
 
 .overlay-element {
   z-index: 999999;
+}
+
+.pt-page-1{
+  background-color: #ffffff;
+}
+.pt-page-2{
+  background-color: #ffffff;
+}
+.pt-page{
+  overflow: scroll;
+}
+body{
+  overflow-y: scroll;
 }
