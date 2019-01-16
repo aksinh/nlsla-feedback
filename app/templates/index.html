@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition-animations.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/base.css') }}"/>
     <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
     {% endblock %}
 </head>
 <body>
@@ -24,17 +25,29 @@
                 </a>
             </div>
             <div class="nav navbar-nav navbar-right">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div style="max-width:auto;height:20px;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div style="max-width:auto;height:20px; font-size: 20px;">
                             ENGLISH
                             <img src="http://www.cndajin.com/data/wls/26/5484277.png">
                         </div>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">ENGLISH</a></li>
-                        <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                            <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                        </div>
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div style="max-width:auto;height:20px; font-size: 20px;">
+                            Aa
+                            <img src="http://www.cndajin.com/data/wls/26/5484277.png">
+                        </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                            <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,17 +59,17 @@
 <div class="audio-select">
     <button style="position:absolute;left:3%;top:10%;">
         <div class="overlay-element" style="position:relative;max-width:auto;height:30px;">
-            <img src="https://image.flaticon.com/icons/svg/53/53838.svg">
+            <img src="{{ url_for('static', filename='image/soundicon.png') }}">
         </div>
     </button>
 </div>
 <div class="zoom-select">
-    <button style="position:absolute;left:2%;top:20%;">
+    <button style="position:absolute;left:2%;top:15%;">
         <div class="overlay-element" style="position:relative;max-width:auto;height:30px;">
             <img src="https://s3.amazonaws.com/iconbros/icons/icon_pngs/000/000/228/original/plus.png?1510301290">
         </div>
     </button>
-    <button style="position:absolute;left:4%;top:20%;">
+    <button style="position:absolute;left:4%;top:15%;">
         <div class="overlay-element" style="position:relative;max-width:auto;height:30px;">
             <img src="https://image.freepik.com/free-icon/circular-button-with-minus-sign_318-25233.jpg">
         </div>

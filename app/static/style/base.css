@@ -12,7 +12,6 @@
 
 .right {
   right: 0;
-  border-left:solid 2px gray;
 }
 
 .centered {
@@ -24,7 +23,12 @@
 
 .question {
   font-size: 28px;
+<<<<<<< HEAD
   padding-bottom: 20px;
+=======
+  font-family: 'Poppins', sans-serif;
+  color: #030F3D;
+>>>>>>> origin/master
 }
 
 .a-select-image {
@@ -74,4 +78,12 @@ button {
 .a-select-text {
     padding-top: 10px;
     font-size: 20px;
+}
+
+.pt-page{
+  overflow: scroll;
+}
+
+body{
+  overflow-y: scroll;
 }
