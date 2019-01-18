@@ -2,38 +2,41 @@
     <div class="question">Please select the counselor you met with.</div>
     <div class="answers a-select row">
         <div class="a-select-option col-sm-4">
-            <button>
-            <div class="a-select-image" style="height: 200px;">
-                <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Jane Doe</div>
-            </button>
+            <input class="radio-btn" id="counselor-jane-doe" name="counselor" value="jane-doe" type="radio">
+            <label for="counselor-jane-doe">
+                <div class="a-select-image" style="height: 200px;">
+                    <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Jane Doe</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-4">
-            <button>
-            <div class="a-select-image" style="height: 200px;">
-                <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Jane Doe</div>
-            </button>
+            <input class="radio-btn" id="counselor-jane-doe2" name="counselor" value="jane-doe2" type="radio">
+            <label for="counselor-jane-doe2">
+                <div class="a-select-image" style="height: 200px;">
+                    <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Jane Doe2</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-4">
-            <button>
-            <div class="a-select-image" style="height: 200px;">
-                <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Jane Doe</div>
-            </button>
+            <input class="radio-btn" id="counselor-jane-doe3" name="counselor" value="jane-doe3" type="radio">
+            <label for="counselor-jane-doe3">
+                <div class="a-select-image" style="height: 200px;">
+                    <img src="{{ url_for('static', filename='image/profile.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Jane Doe3</div>
+            </label>
         </div>
     </div>
 </div>
-<button class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
+<button type="button" class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
     <div style="height:20px;">NEXT<img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="margin-left:10px;">
     </div>
     </button>
-    <button class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
+    <button type="button" class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
     <div style="height:20px;"><img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="transform:rotate(180deg);margin-left:10px;">

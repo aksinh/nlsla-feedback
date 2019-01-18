@@ -51,11 +51,6 @@ img {
   position: relative;
 }
 
-.another-wrapper {
-  position: relative;
-  height: 100%;
-}
-
 .page-btn {
   position: absolute;
   bottom: 5%;
@@ -83,4 +78,17 @@ button {
 
 body{
   overflow-y: scroll;
+}
+
+.radio-btn{
+    visibility: hidden;
+}
+
+label{
+    cursor: pointer;
+    padding: 15px;
+}
+
+input:checked + label{
+    box-shadow: 0 0 10px #666;
 }

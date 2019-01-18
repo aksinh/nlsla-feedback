@@ -3,15 +3,15 @@
         <div class="question">Please select your language.</div>
         <div class="answers a-select row">
             <div class="a-select-option col-sm-6">
-                <button>
+                <button type="button">
                 <div class="a-select-image">
-                    <img src="{{ url_for('static', filename='image/flag-us.png') }}">
+                    <img src="{{ url_for('static', filename='image/flag-us.svg') }}">
                 </div>
                 <div class="a-select-text">English</div>
                 </button>
             </div>
             <div class="a-select-option col-sm-6">
-                <button>
+                <button type="button">
                 <div class="a-select-image">
                     <img src="{{ url_for('static', filename='image/flag-sp.png') }}" style = "width: 85%;">
                 </div>
@@ -24,7 +24,7 @@
 <div class="split right">
     <div class="centered">
         <div class="question">Please choose whether to have text read aloud.</div>
-        <button>
+        <button type="button">
         <div class="a-select-image">
             <img src="{{ url_for('static', filename='image/soundicon.svg') }}" style = "width: 100%; height: 100%;">
         </div>
@@ -32,7 +32,7 @@
         </button>
     </div>
 </div>
-<button class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
+<button type="button" class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
     <div style="height:20px;">NEXT<img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="margin-left:10px;">

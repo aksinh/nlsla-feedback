@@ -2,30 +2,32 @@
     <div class="question">Please select the type of feedback you would like to submit.</div>
     <div class="answers a-select row">
         <div class="a-select-option col-sm-6">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/clipboard.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">General</div>
-            </button>
+            <input class="radio-btn" id="form-type-general" name="form-type" value="general" type="radio">
+            <label for="form-type-general">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/clipboard.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">General</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-6">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/counselor.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">For a counselor</div>
-            </button>
+            <input class="radio-btn" id="form-type-counselor" name="form-type" value="counselor" type="radio">
+            <label for="form-type-counselor">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/counselor.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">For a counselor</div>
+            </label>
         </div>
     </div>
 </div>
-<button class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
+<button type="button" class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
     <div style="height:20px;">NEXT<img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="margin-left:10px;">
     </div>
     </button>
-    <button class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
+    <button type="button" class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
     <div style="height:20px;"><img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="transform:rotate(180deg);margin-left:10px;">

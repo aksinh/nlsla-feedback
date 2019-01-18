@@ -2,46 +2,50 @@
     <div class="question">Please select the service you were helped with.</div>
     <div class="answers a-select row">
         <div class="a-select-option col-sm-3">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/house.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Housing</div>
-            </button>
+            <input class="radio-btn" id="service-housing" name="service" value="housing" type="radio">
+            <label for="service-housing">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/house.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Housing</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-3">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/justice.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Justice</div>
-            </button>
+            <input class="radio-btn" id="service-justice" name="service" value="justice" type="radio">
+            <label for="service-justice">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/justice.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Justice</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-3">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/medicine.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Health</div>
-            </button>
+            <input class="radio-btn" id="service-health" name="service" value="health" type="radio">
+            <label for="service-health">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/medicine.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Health</div>
+            </label>
         </div>
         <div class="a-select-option col-sm-3">
-            <button>
-            <div class="a-select-image" style="height:120px;">
-                <img src="{{ url_for('static', filename='image/financialsecurity.svg') }}" style = "height: 100%; width: 100%;">
-            </div>
-            <div class="a-select-text">Economic Security</div>
-            </button>
+            <input class="radio-btn" id="service-economic" name="service" value="economic" type="radio">
+            <label for="service-economic">
+                <div class="a-select-image" style="height:120px;">
+                    <img src="{{ url_for('static', filename='image/financialsecurity.svg') }}" style = "height: 100%; width: 100%;">
+                </div>
+                <div class="a-select-text">Economic Security</div>
+            </label>
         </div>
     </div>
 </div>
-<button class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
+<button type="button" class="overlay-element pt-trigger page-btn go-right-btn" data-animation="1" data-goto="-1">
     <div style="height:20px;">NEXT<img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="margin-left:10px;">
     </div>
     </button>
-    <button class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
+    <button type="button" class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
     <div style="height:20px;"><img
             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
             style="transform:rotate(180deg);margin-left:10px;">

@@ -2,26 +2,28 @@
     <div class="question">Would you recommend this service?</div>
     <div class="answers a-select row">
         <div class="a-select-option col-sm-6">
-            <button>
-            <div class="a-select-image" style="height:200px;">
-                <img src="{{ url_for('static', filename='image/cross.svg') }}" style="height: 100%; width: 100%;">
-            </div>
-            </button>
+            <input class="radio-btn" id="recommend-negative" name="recommend" value="negative" type="radio">
+            <label for="recommend-negative">
+                <div class="a-select-image" style="height:200px;">
+                    <img src="{{ url_for('static', filename='image/cross.svg') }}" style="height: 100%; width: 100%;">
+                </div>
+            </label>
         </div>
         <div class="a-select-option col-sm-6">
-            <button>
-            <div class="a-select-image" style="height:200px;">
-                <img src="{{ url_for('static', filename='image/check.svg') }}" style="height: 100%; width: 100%;">
-            </div>
-            </button>
+            <input class="radio-btn" id="recommend-positive" name="recommend" value="positive" type="radio">
+            <label for="recommend-positive">
+                <div class="a-select-image" style="height:200px;">
+                    <img src="{{ url_for('static', filename='image/check.svg') }}" style="height: 100%; width: 100%;">
+                </div>
+            </label>
         </div>
     </div>
 </div>
-<button class="overlay-element page-btn go-right-btn submit-btn">
+<button type="button" class="overlay-element page-btn go-right-btn submit-btn">
     <div style="height:20px;">SUBMIT
     </div>
 </button>
-<button class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
+<button type="button" class="overlay-element pt-trigger page-btn go-left-btn" data-animation="2" data-goto="-2">
 <div style="height:20px;"><img
         src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
         style="transform:rotate(180deg);margin-left:10px;">
