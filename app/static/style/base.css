@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+.subtitle{
+  color: red;
+}
+
 .left {
   left: 0;
 }
@@ -24,6 +28,7 @@
 
 .question {
   font-size: 28px;
+  font-weight: bold;
 }
 
 .a-select-image {

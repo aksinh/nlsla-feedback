@@ -1,6 +1,5 @@
 $(document).ready(function() {
     //BRYANTS TODO LIST:
-    //TODO: check over other JS and make JS as light as possible- less JS the better! (NLSLA said audience might have poor internet connection)
     //TODO: make html tabbable
     //TODO: test rendering of website in all browsers (including all versions of IE 10 &+)
     //TODO: make sure mobile version is accessibile- especially for iPad/ mobile Safari!!!!!!!!
@@ -8,14 +7,14 @@ $(document).ready(function() {
 //**Change font size**//
 var fontLevel = 0;
 $('.increaseFontSize').click(function() {
-  if (fontLevel >= 0 && fontLevel < 7){
+  if (fontLevel >= 0 && fontLevel < 10){
     fontLevel += 1;
     updateFontSizes();
   }
 });
 
 $('.decreaseFontSize').click(function() {
-  if (fontLevel > 0 && fontLevel <= 7){
+  if (fontLevel > 0 && fontLevel <= 10){
     fontLevel -= 1;
     updateFontSizes();
   }
@@ -23,16 +22,17 @@ $('.decreaseFontSize').click(function() {
 
 function updateFontSizes(){
   $('.question').css('font-size', parseFloat(fontLevel) + 28 + 'px');
-  // $('.subtitle').css('font-size', parseFloat(fontLevel) + 28 + 'px');
+  $('.a-select-text').css('font-size', parseFloat(fontLevel) + 11 + 'px');
+  $('.back_forward_btn_text').css('font-size', parseFloat(fontLevel) + 11 + 'px');
 }
-
 
 //**Change contrast of background**//
 function changeContrast(backgroundColor, textColor){
   $('body').css('background-color', backgroundColor);
-  $('p').css('color', textColor);
-  $('h1').css('color', textColor);
-  $('h2').css('color', textColor);
+  $('.question').css('color', textColor);
+  $('.a-select-text').css('color', textColor);
+  $('.back_forward_btn_text').css('color', textColor);
+
 }
 
  $('.blackBack_WhiteText').click(function() {
@@ -58,6 +58,12 @@ function changeContrast(backgroundColor, textColor){
    $('h2').css('font-family', 'serif');
    $('p').css('font-family', 'serif');
  });
+
+
+
+
+
+
 
 //**Change line-heights**//
 function changeLineHeight(id, isIncreased){
