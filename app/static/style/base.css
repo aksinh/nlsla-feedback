@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+.subtitle{
+  color: red;
+}
+
 .left {
   left: 0;
 }
@@ -23,6 +27,7 @@
 
 .question {
   font-size: 28px;
+  font-weight: bold;
   font-family: 'Poppins', sans-serif;
   color: #030F3D;
 }

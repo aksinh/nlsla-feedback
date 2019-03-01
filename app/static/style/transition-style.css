@@ -62,7 +62,7 @@ body {
 .pt-message p {
     margin: 0;
     line-height: 60px;
-    font-size: 26px;
+    /* font-size: 26px; */
 }
 
 .no-cssanimations .pt-message {
