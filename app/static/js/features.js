@@ -60,11 +60,6 @@ function changeContrast(backgroundColor, textColor){
  });
 
 
-
-
-
-
-
 //**Change line-heights**//
 function changeLineHeight(id, isIncreased){
   var el = document.getElementById(id);
