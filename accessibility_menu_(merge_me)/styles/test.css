@@ -1,0 +1,86 @@
+button{
+	border: none;
+	font-size: 30px;
+	background-color: white;
+	padding-bottom: 5px;
+}
+body{
+	background-color: white;
+}
+
+button:hover{
+	cursor: pointer;
+}
+button:active{
+	background-color: grey;
+}
+
+.options{
+	/* -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75); */
+	box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+	background-color: white;
+	position: fixed;
+	display: flex;	
+	align-content: stretch;
+	margin-left: 50px;
+	width: 300px;
+	flex-direction: column;
+	flex-flow: row wrap;
+}
+
+.row{
+	width: 100%;
+	padding:0px;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.option{
+	flex-grow: 3;
+	outline: 1px solid rgb(166, 166, 166);
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	margin: 0px;
+	display: none;
+}
+.option:hover{
+	cursor: pointer;
+	/* background-color: rgb(230, 230, 230); */
+}
+p{
+	text-align: center;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #increase_font_size{
+	font-size: 15pt;
+}
+#decrease_font_size{
+	font-size: 10pt;
+} */
+
+#dark{
+	color: white;
+}
+.dark{
+	background-color: rgb(38,38,38);
+}
+
+#sepia{
+	color: rgb(90, 67, 52);
+}
+.sepia{
+	background-color: rgb(243, 232, 204);
+}
+
+#font1{
+	font-family: Arial, Helvetica, sans-serif;
+}
+#font2{
+	font-family: 'Times New Roman', Times, serif;
+}
