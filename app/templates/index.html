@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
-    <title>NLSLA Feedback</title>
-    {% block head %}
-    <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition-style.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition-animations.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/base.css') }}"/>
-    <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/audio.css') }}"/>
-    <script src="../static/js/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="../static/js/features.js" type="text/javascript"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
-    {% endblock %}
+  <meta charset="UTF-8">
+  <title>NLSLA Feedback</title>
+  {% block head %}
+  <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition-style.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/transition-animations.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/base.css') }}"/>
+  <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/audio.css') }}"/>
+  <script src="../static/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="../static/js/features.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+  {% endblock %}
 </head>
 <body>
 <div>
@@ -88,18 +90,20 @@
             <div class="pt-trigger-container">
                 <button class="overlay-element pt-trigger next-btn" data-animation="1" data-goto="-1">
                     <div style="height:20px;">
-                      <div class="back_forward_btn_text">NEXT</section> <!--make me inline-->
+                      <div class="back_forward_btn_text">NEXT</div> 
                       <img
                             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
                             style="margin-left:10px;">
                     </div>
                 </button>
                 <button class="overlay-element pt-trigger back-btn" data-animation="2" data-goto="-2">
-                    <div style="height:20px; font-family: 'Poppins', sans-serif; color: "><img
+                    <div style="height:20px; font-family: 'Poppins', sans-serif; ">
+                      <div class="back_forward_btn_text">BACK</div>
+                      <img
                             src="http://www.stickpng.com/assets/images/585e47b5cb11b227491c338b.png"
                             style="transform:rotate(180deg);margin-left:10px;">
-                      <div class="back_forward_btn_text">BACK</section>
                     </div>
+
                 </button>
             </div>
         </div>
