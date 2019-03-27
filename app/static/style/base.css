@@ -59,11 +59,9 @@ img {
   position: relative;
   height: 100%;
 }
-
-.pt-trigger {
+.back-bottom-btn{
   position: absolute;
   bottom: 5%;
-  padding: 10px;
 }
 
 button {
