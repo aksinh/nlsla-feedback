@@ -29,32 +29,37 @@ $(document).ready(function () {
 
     //change to font 1-arial
     $("#font1").click(function () {
-        document.getElementById("text").style.fontFamily = "Arial"
+        document.getElementById("text").style.fontFamily = "Arial";
     });
 
     //change to font 2-times new roman
     $("#font2").click(function () {
-        document.getElementById("text").style.fontFamily = "Times New Roman"
+        document.getElementById("text").style.fontFamily = "Times New Roman";
     });
 
-    //change to light theme
-    $("#light").click(function () {
-        document.body.style.backgroundColor = "white"
-        document.getElementById("text").style.color = "black"
-    });
 
+    function changeContrast(backgroundColor, textColor){
+        $('#text').css('color', textColor);
+        $('body').css('background-color', backgroundColor);
+        $('.question').css('color', textColor);
+        $('.a-select-text').css('color', textColor);
+        $('.back_forward_btn_text').css('color', textColor);
+    }
     //change to dark theme
-    $("#dark").click(function () {
-        document.body.style.backgroundColor = "black"
-        document.getElementById("text").style.color = "white"
+    $('#dark').click(function() {
+        changeContrast('black', 'white');
     });
-
+    
+    //change to light theme
+    $('#light').click(function() {
+        changeContrast('white', '#383838');
+    });
+    
     //change to sepia theme
-    $("#sepia").click(function () {
-        document.body.style.backgroundColor = "#F3E8CC"
-        document.getElementById("text").style.color = "#5A4334"
+    $('#sepia').click(function() {
+        changeContrast('#F4ECD8', '#685444');
     });
-
+     
 
     //clicking in the elements of the menu does not hide the accessibility menu
     $(".option").click(function (e) {
@@ -68,3 +73,5 @@ $(document).ready(function () {
         return false;
     });
 });
+
+

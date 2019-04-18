@@ -85,13 +85,13 @@ $(document).click(function() {
 //clicking in the elements of the menu does not hide the accessibility menu
 $(".option").click(function(e) {
     e.stopPropagation(); 
-    return false;        
+    // return false;        
 });
 
-//clicking the accessibility button does not automatically the accessibility menu
+//clicking the accessibility button does not automatically close the accessibility menu
 $(".accessibility_button").click(function(e) {
     e.stopPropagation(); 
-    return false;        
+    // return false;        
 });
 });
 

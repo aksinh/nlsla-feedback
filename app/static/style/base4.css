@@ -1,3 +1,98 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.subtitle{
+  color: red;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #030F3D;
+}
+
+.a-select-image {
+  max-width: auto;
+  height: 70px;
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+.next-btn {
+    right: 7%;
+}
+
+.back-btn {
+    left: 7%;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.another-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.pt-trigger {
+  position: absolute;
+  bottom: 5%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: transparent;
+  border: 0;
+}
+
+.overlay-element {
+  z-index: 999999;
+}
+
+.pt-page-1{
+  background-color: #ffffff;
+}
+.pt-page-2{
+  background-color: #ffffff;
+}
+.pt-page{
+  overflow: scroll;
+}
+body{
+  overflow-y: scroll;
+}
+
+
+
+/* Accessibility features CSS */
+
 button{
 	border: none;
 	font-size: 30px;
@@ -20,13 +115,14 @@ button:active{
 	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75); */
 	box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 	background-color: white;
-	position: fixed;
+	position: absolute;
 	display: flex;	
 	align-content: stretch;
 	margin-left: 50px;
 	width: 300px;
 	flex-direction: column;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
+  
 }
 
 .row{
@@ -36,6 +132,10 @@ button:active{
 	display: flex;
 	flex-direction: row;
 }
+/* .accessibility_button{
+  position: relative;
+  margin-top: 100px;
+} */
 
 
 .option{
@@ -87,3 +187,5 @@ p{
 .option:hover{
 	text-decoration: underline;
 }
+
+
