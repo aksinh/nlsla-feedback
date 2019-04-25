@@ -19,7 +19,7 @@ var PageTransitions = (function() {
 		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
 		// support css animations
 		support = Modernizr.cssanimations;
-	
+
 	function init() {
 
 		$pages.each( function() {
@@ -58,7 +58,7 @@ var PageTransitions = (function() {
 		}
 
 		isAnimating = true;
-		
+
 		var $currPage = $pages.eq( current );
 
 		if(options.showPage){
@@ -129,7 +129,7 @@ var PageTransitions = (function() {
 
 	init();
 
-	return { 
+	return {
 		init : init,
 		nextPage : nextPage,
 	};
