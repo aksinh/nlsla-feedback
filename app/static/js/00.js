@@ -73,8 +73,8 @@ function changeContrast(backgroundColor, textColor){
 //** ACCESSIBILITY MENU JS **/
 $(".accessibility_button").click(function() {
     //toggles whether menu is visible or not upon clicking hamburger button
-    var option_display_value = $(".option").css("display");
-    $(".option").css({'display':(option_display_value == 'none' ? 'initial': 'none')});
+    var option_display_value = $(".options").css("display");
+    $(".options").css({'display':(option_display_value == 'none' ? 'initial': 'none')});
 });
 
 //clicking outside of div hides the accessibility menu

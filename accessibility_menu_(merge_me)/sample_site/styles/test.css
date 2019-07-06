@@ -16,8 +16,8 @@ button:active{
 }
 
 .options{
-	/* -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75); */
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 	background-color: white;
 	position: fixed;
@@ -27,6 +27,7 @@ button:active{
 	width: 300px;
 	flex-direction: column;
 	flex-flow: row wrap;
+
 }
 
 .row{
@@ -39,6 +40,7 @@ button:active{
 
 
 .option{
+	
 	flex-grow: 3;
 	outline: 1px solid rgb(166, 166, 166);
 	padding-left: 10px;
@@ -49,7 +51,7 @@ button:active{
 }
 .option:hover{
 	cursor: pointer;
-	/* background-color: rgb(230, 230, 230); */
+	text-decoration: underline;
 }
 p{
 	text-align: center;
@@ -62,6 +64,10 @@ p{
 }
 #decrease_font_size{
 	font-size: 10pt;
+}
+
+.decrease_font_size{
+	padding-top: 10px;
 } */
 
 #dark{
@@ -70,6 +76,9 @@ p{
 .dark{
 	background-color: rgb(38,38,38);
 }
+.dark:hover{
+	text-decoration-color: white;
+}
 
 #sepia{
 	color: rgb(90, 67, 52);
@@ -77,13 +86,13 @@ p{
 .sepia{
 	background-color: rgb(243, 232, 204);
 }
+.sepia:hover{
+	text-decoration-color: rgb(90, 67, 52);
+}
 
 #font1{
 	font-family: Arial, Helvetica, sans-serif;
 }
 #font2{
 	font-family: 'Times New Roman', Times, serif;
-}
-.option:hover{
-	text-decoration: underline;
 }
